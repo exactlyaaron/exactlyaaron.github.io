@@ -1,4 +1,7 @@
-exactlyaaron.github.io
-======================
+# Portfolio for Aaron Johnson Coding
 
-Github portfolio
+### Showcased Technologies
+
+* HTML
+* CSS
+* Javascript
