@@ -43,11 +43,12 @@ h3 {
 }
 
 img {
-  width:50%;
+  width:100%;
   height:auto;
   border:1px solid #999;
   box-shadow: 0px 0px 5px #ccc;
   margin: 0 0 20px 0;
+  max-width:500px;
 }
 
 img:hover {
@@ -74,7 +75,7 @@ a.repo-link:hover {
 }
 
 ul {
-  width:60%;
+  width:100%;
   margin:0 auto;
   text-align:center;
 }
