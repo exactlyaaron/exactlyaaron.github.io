@@ -9,8 +9,7 @@ body {
   background-color:#333;
   font-family:sans-serif;
   font-family: 'Source Code Pro', sans-serif;
-/*  background-image: url(../images/bg.jpg);*/
-  background-size: cover;
+  background-image: url(../images/pattern.png);
 
 }
 
@@ -22,6 +21,7 @@ body {
   padding:40px;
   border-radius: 8px;
   margin-top:5%;
+  margin-bottom:100px;
   clear:both;
   text-align:center;
 
