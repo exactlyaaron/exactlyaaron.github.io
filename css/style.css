@@ -5,12 +5,16 @@
   transition: all 0.2s ease;
 }
 
+.clear {
+  clear:both;
+  margin-bottom:20px;
+}
+
 body {
   background-color:#333;
   font-family:sans-serif;
   font-family: 'Source Code Pro', sans-serif;
   background-image: url(../images/pattern.png);
-
 }
 
 #wrapper {
@@ -29,17 +33,44 @@ body {
 
 h1 {
   color: #333;
-  border-bottom: 1px solid #D8D8D8;
-  padding-bottom:20px;
   text-align:center;
   width:90%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
+
 }
 
 h3 {
   font-family: 'Source Code Pro', sans-serif;
   font-size:24px;
   font-weight:normal;
+  border-top: 1px solid #D8D8D8;
+  padding-top:20px;
+  width:85%;
+  margin:0 auto 20px auto;
+}
+
+.project-container {
+  width:80%;
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.item {
+  width: 40%;
+  float:left;
+  margin:15px;
+}
+
+.last-item a {
+  width: 100%;
+  font-family: 'Arvo', serif;
+  border-radius:3px;
+  padding:13px;
+  background-color:#fc0;
+  margin:5px;
+  text-decoration:none;
+  color:#333;
+  margin-top: 300px;
 }
 
 img {
@@ -48,7 +79,6 @@ img {
   border:1px solid #999;
   box-shadow: 0px 0px 5px #ccc;
   margin: 0 0 20px 0;
-  max-width:500px;
 }
 
 img:hover {
@@ -63,6 +93,8 @@ a.repo-link {
   margin:5px;
   text-decoration:none;
   color:#333;
+  width:90%;
+  display:block;
 }
 
 a.repo-link:hover {
@@ -76,8 +108,12 @@ a.repo-link:hover {
 
 ul {
   width:100%;
-  margin:0 auto;
   text-align:center;
+  -webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
 }
 
 .ul-wrapper {
@@ -86,12 +122,12 @@ ul {
 
 ul li {
   font-family: 'Arvo', serif;
-  float:left;
   border-radius:3px;
+  display:inline-block;
   padding:10px;
   background-color:#fc0;
   list-style-type:none;
-  margin:5px;
+  margin:5px 0;
   text-align:center;
 
 }
@@ -99,4 +135,23 @@ ul li {
 ul li:hover {
   background-color:#333;
   color:#fc0;
+}
+
+@media all and (max-width: 850px) and (min-width: 0px) {
+  #wrapper {
+    width:80%
+  }
+}
+
+@media all and (max-width: 700px) and (min-width: 0px) {
+
+  .project-container {
+    width:100%;
+  }
+  .item {
+    float:none;
+    width:95%;
+    margin:0 auto;
+
+  }
 }
